@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <picker />
+    <results-list />
+    <stats />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import resultsList from '@/components/resultsList'
+import picker from '@/components/picker'
+import stats from '@/components/stats'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    resultsList,
+    picker,
+    stats
   }
 }
 </script>
-
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
